@@ -7,7 +7,8 @@ const connectDB = async () => {
     const options: ConnectionOptions = {
       useNewUrlParser: true,
       useCreateIndex: true,
-      useFindAndModify: false
+      useFindAndModify: false,
+      useUnifiedTopology: true
     };
     await connect(
       mongoURI,
